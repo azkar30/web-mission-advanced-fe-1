@@ -21,7 +21,7 @@ const CreatePostingans = () => {
 
   const postData = (e) => {
     e.preventDefault();
-    axios.post("https://6793cb9d5eae7e5c4d8fead7.mockapi.io/api/article", {
+    axios.post("https://67950294aad755a134eafab4.mockapi.io/article/Video", {
       judul,
       deskripsi,
       kategori,

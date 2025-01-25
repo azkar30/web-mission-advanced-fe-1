@@ -54,13 +54,13 @@ const EditPostingans = () => {
 
   const getData = () => {
     axios
-      .get("https://6793cb9d5eae7e5c4d8fead7.mockapi.io/api/article")
+      .get("https://67950294aad755a134eafab4.mockapi.io/article/Video")
       .then((response) => console.log(response.data));
   };
 
   const deleteData = (id) => {
     axios
-      .delete(`https://6793cb9d5eae7e5c4d8fead7.mockapi.io/api/article/${id}`)
+      .delete(`https://67950294aad755a134eafab4.mockapi.io/article/Video/${id}`)
       .then(() => {
         getData();
         setShowDelete(false); // Menutup modal setelah delete berhasil
@@ -73,12 +73,15 @@ const EditPostingans = () => {
 
   const updateData = (e) => {
     e.preventDefault();
-    axios.put(`https://6793cb9d5eae7e5c4d8fead7.mockapi.io/api/article/${id}`, {
-      judul,
-      deskripsi,
-      kategori,
-      harga,
-    });
+    axios.put(
+      `https://67950294aad755a134eafab4.mockapi.io/article/Video/${id}`,
+      {
+        judul,
+        deskripsi,
+        kategori,
+        harga,
+      }
+    );
   };
 
   return (

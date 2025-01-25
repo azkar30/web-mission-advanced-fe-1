@@ -23,7 +23,7 @@ const VideoListSections = () => {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://6793cb9d5eae7e5c4d8fead7.mockapi.io/api/article")
+      .get("https://67950294aad755a134eafab4.mockapi.io/article/Video")
       .then((response) => setAPIData(response.data));
   }, []);
 
